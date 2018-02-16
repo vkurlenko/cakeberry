@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+.sliderCatalog{border:1px solid #dbdbdb; 
+border-radius:4px 4px 4px 4px; -webkit-border-radius:7px 7px 7px 7px; -moz-border-radius:7px 7px 7px 7px; -khtml-border-radius:7px 7px 7px 7px;  
+height:275px; padding:15px 35px 15px 25px; position:relative; margin-bottom:10px}
+.sliderCatalog h2{padding-bottom:20px}
+.sliderCatalogItem{float:left; width:160px; text-align:center; margin:0 5px}
+.sliderCatalogItem a{display:block; display:table-cell; vertical-align:bottom; height:166px; width:160px; text-align:center}
+.sliderCatalogItem .itemName{display:block; margin-top:10px}
+.sliderCatalogItem .itemStars, .sliderCatalogItem .itemPrice{margin-top:4px}
+
+.sliderCatalog .buttonPrev{position:absolute; top:50%; margin-top:-25px; left:5px; z-index:2}
+.sliderCatalog .buttonNext{position:absolute; top:50%; margin-top:-25px; right:5px; z-index:2}
+
+.sliderCatalog {overflow: hidden;}
+
+.scrollable2 {float: left; left:40px; height: 240px; overflow: hidden; position: relative; width: 1020px;}
+.scrollable2 .items {position: absolute; width: 20000em;}
+
+.sliderCatalog .items div.item {float: left;}
+
+.sliderCatalog .view {display: block; float: left; position:relative}
+
+.scrollable2 .items img {border: medium none;/* display: block;*/}
+.scrollable2 .items .itemStars img{display:inline}
+
+.sliderCatalog a.browse{cursor: pointer;display: block;float: left; font-size: 1px; height: 50px; width: 50px; position:absolute;	top:50%;margin-top:-25px; z-index:2}
+.sliderCatalog a.disabled{background: none repeat scroll 0 0 transparent; cursor: auto; margin-left: 0; display:none;}
+.sliderCatalog a.left{background: url("/img/tpl/arrow_left.png"); margin-left: -18px;}
+.sliderCatalog a.right{background: url("/img/tpl/arrow_right.png"); clear: right; margin-right: 5px; right:0}

@@ -1,0 +1,1 @@
+<div class="bannerSmall"><a href=":::banner_link:::"><img src=":::banner_src:::" width="570" height="150" /></a></div>

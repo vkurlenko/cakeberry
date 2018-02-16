@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+.sliderCalendar{border:1px solid #dbdbdb; 
+border-radius:4px 4px 4px 4px; -webkit-border-radius:7px 7px 7px 7px; -moz-border-radius:7px 7px 7px 7px; -khtml-border-radius:7px 7px 7px 7px;  
+padding:15px 35px 15px 45px; margin-top:10px; margin-bottom:10px; position:relative}
+.sliderCalendar h2{padding-bottom:20px}
+.sliderCalendarItem{float:left; width:200px; text-align:center; margin:0 30px}
+.sliderCalendarItem .itemName{display:block; margin-top:10px}
+
+
+.sliderCalendar .buttonPrev{position:absolute; top:50%; margin-top:-25px; left:5px; z-index:2}
+.sliderCalendar .buttonNext{position:absolute; top:50%; margin-top:-25px; right:5px; z-index:2}
+
+.sliderCalendar {overflow: hidden;}
+
+.scrollable4 {float: left; height: 160px; overflow: hidden; position: relative; width: 1020px;}
+.scrollable4 .items {position: absolute; width: 20000em;}
+
+.sliderCalendar .items div.item {float: left; padding:0 10px}
+
+.sliderCalendar .view {display: block; float: left; position:relative}
+
+.scrollable4 .items img {border: medium none;/* display: block;*/}
+
+
+.sliderCalendar a.browse{cursor: pointer;display: block;float: left; font-size: 1px; height: 50px; width: 50px; position:absolute;	top:50%;margin-top:-25px; z-index:2}
+.sliderCalendar a.disabled{background: none repeat scroll 0 0 transparent; cursor: auto; margin-left: 0; display:none;}
+.sliderCalendar a.left{background: url("/img/tpl/arrow_left.png"); margin-left: -40px;}
+.sliderCalendar a.right{background: url("/img/tpl/arrow_right.png"); clear: right; margin-right: 5px; right:0}

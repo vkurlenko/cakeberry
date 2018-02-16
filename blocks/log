@@ -1,0 +1,5 @@
+подключаем файлы \nclass DB \n/class DB \nconfig   /Mysql \nconfig  считаем из БД ассоциативные массивы \nconfig переменные, редактируемые через cms \nконец config \nподключили config \nподключили functions \nподключили functions_sql \nподключили mail.inc.php \nSELECT * FROM `cbr_notes`
+		WHERE 	(note_rem_3 = '0' AND (note_date = '2014-07-15' + INTERVAL 14 DAY))
+		OR 		(note_rem_2 = '0' AND (note_date = '2014-07-15' + INTERVAL 7 DAY)) 
+		OR 		(note_rem_1 = '0' AND (note_date = '2014-07-15' + INTERVAL 3 DAY))
+		LIMIT 	0,5

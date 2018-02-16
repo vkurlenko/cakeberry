@@ -1,0 +1,435 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{font-family:tahoma; font-size:13px; color:#333}
+
+body{margin:0; padding:0; background:#CCCCCC}
+
+img{border:0}
+
+a{border:0; color:#906; text-decoration:underline}
+a:hover{text-decoration:none}
+
+h1{font-family:"Times New Roman", Times, serif; font-size:48px; font-style:italic; padding:0; margin:0; font-weight:normal; line-height:0.7em}
+h2{font-family:"Times New Roman", Times, serif; font-size:30px; font-style:italic; padding:0; margin:0; font-weight:normal; line-height:0.7em}
+
+p{line-height:1.5em}
+
+
+#mainDiv{width:1200px; margin:0 auto; padding:0; background:#fff}
+
+/* верхний блок */
+.topBlock{height:70px; padding:0 25px}
+.logoImg img{margin-top:25px}
+
+.topBlock div{float:right; color:#999; font-size:11px; margin-top:35px}
+.topBlockPhone{margin-left:120px; margin-top:28px !important}
+.topBlockPhone .phoneTitle{display:block; float:left;  font-size:11px; margin-top:7px}
+.topBlockPhone span{font-size:18px; color:#999; display:block;  float:right; margin-left:20px; margin-top:1px}
+.topBlockPhone span span{font-size:18px;color:#906; display:inline; margin-left:0; margin-top:0}
+
+.topBlockCenter{width:420px}
+.topBlockPayonline{/*margin-left:75px;*/ margin-top:0 !important; float:left}
+.topBlockPayonline span{display:block; float:left; margin-top:4px }
+.topBlockPayonline span a{font-size:11px; color:#999}
+.topBlockPayonline a{display:block; float:right; margin-top:-4px; margin-left:10px}
+
+.topBlockPrivateEnter{margin-top:0 !important; float:left !important}
+.topBlockPrivateEnter a{font-size:11px; color:#333}
+/* /верхний блок */
+
+
+/* форма авторизации */
+#dialog-form, #dialog-form-call, #dialog-form-ref, #dialog-form-userdata, #dialog-form-note{display:none; }
+#dialog-form label, #dialog-form-call label, #dialog-form-ref label, #dialog-form-userdata label, #dialog-form-note label{color:#fff}
+#dialog-form input.text, #dialog-form-call input.text, #dialog-form-ref input.text, #dialog-form-userdata input.text, #dialog-form-note input.text { /*margin-bottom:12px;*/ width:250px; background:#fff; color:#000 /*padding: .4em; */}
+#dialog-form-ref textarea, #dialog-form-userdata textarea, #dialog-form-note textarea{width:250px; background:#fff; color:#000; border:0; padding:0}
+fieldset { padding:0; border:0; margin-top:25px; }
+
+div#users-contain { width: 350px; margin: 20px 0; }
+div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
+div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+
+#dialog-form .ui-dialog .ui-state-error { padding: .3em; }
+p.ui-state-error{margin:0; text-align:center}
+p.ui-state-error input{margin-top:20px}
+.ui-state-error-call{margin:60px 0 0 0 !important;}
+#dialog-form .validateTips { border: 1px solid transparent; padding: 0.3em; }
+
+#formAuth, #formReg{margin:0 80px}
+#formAuth table{}
+#dialog-form .linkRestorePwd{display:block; float:right}
+#dialog-form p, #dialog-form u{color:#fff;}
+#dialog-form p{padding-left:7px}
+
+.formRegText{margin-top:32px}
+
+#formReg .submitReg{width:190px}
+/* /форма авторизации */
+
+
+/* главное меню */
+ul.menuMain{display:block; padding:0 15px 0 15px; margin:0; background:#906}
+ul.menuMain li{display:block; padding:0; margin:0 20px 0 0; float:left; list-style:none}
+ul.menuMain li.prelastLi{margin-right:0}
+ul.menuMain li.lastLi{margin-right:0 !important; float:right}
+ul.menuMain li a{color:#FFFFFF; text-decoration:none; display:block; padding:5px 10px}
+ul.menuMain li a:hover, ul.menuMain li a.activeA{/*text-decoration:underline;*/ background:#ba007f}
+/* /главное меню */
+
+
+/* карусель промо на главной*/
+.sliderPromo{height:420px; position:relative; border-bottom:1px solid #dbdbdb; position:relative}
+.sliderPromoItemText{position:absolute; left:760px; top:65px; width:360px}
+.sliderPromo .buttonPrev{position:absolute; top:50%; margin-top:-25px; left:25px; z-index:2}
+.sliderPromo .buttonNext{position:absolute; top:50%; margin-top:-25px; right:25px; z-index:2}
+/* /карусель промо на главной*/
+
+.promoMain{height:auto !important}
+
+
+
+.innerDiv{padding:0 24px; border-bottom:1px solid #dbdbdb; position:relative}
+.bgAbout{/*background:url(/img/pic/bg_about.jpg) no-repeat 0 40px;*/}
+
+
+/* блок баннеров */
+.bannerBlock{margin:10px 2px 0; padding-left:22px}
+.bannerBlock div.bannerSmall{margin:0 18px 10px 0px; float:left}
+.bannerBlock div.bannerBig{clear:both; margin:0 0 10px 0px;}
+
+.catalogBannerBlock{margin:20px 0 0; padding-left:0}
+.catalogBannerBlock div.bannerSmall{margin:0 12px 10px 0; float:left}
+.catalogBannerBlock div.bannerLast {margin:0 0 10px 0 !important;}
+.catalogBannerBlock div.bannerBig{clear:both; margin:0 0 10px 0;}
+/* /блок баннеров */
+
+
+/* навигационная цепочка */
+.nav{height:30px; padding-top:12px; float:left}
+.navArrow{margin:0 8px; display:block; float:left}
+a.navCurrent{margin-top:1px}
+.nav span{font-size:11px; color:#333; display:block; float:left; margin-top:2px}
+.nav a{font-size:11px; text-decoration:none; color:#666; display:block; float:left; margin-top:2px}
+.nav a:hover{text-decoration:underline}
+/* /навигационная цепочка */
+
+
+/* контент */
+.content{padding-top:25px;}
+.content p{}
+.bgAbout .content{height:580px; width:40%}
+/* /контент */
+
+
+/* каталог товаров */
+.pageLister{font-size:13px; float:right; padding-top:14px; margin-right:-5px}
+.pageLister1{padding-top:19px !important; /*margin-right:20px*/}
+.pageLister span{color:#906; font-weight:bold;font-size:11px;  margin:0 5px}
+.pageLister a{padding:0 5px; color:#333; font-size:11px; text-decoration:none}
+.pageLister a:hover{text-decoration:underline}
+.pageLister1 span, .pageLister1 a{font-size:13px !important;}
+
+.pageLister a.linkWishList{/*color:#906;*/ text-decoration:none; margin-left:5px}
+.pageLister a.linkWishList:hover{text-decoration:underline}
+
+.catalog{}
+
+.catalog .nav, .itemCardPage .nav{float:left}
+.catalog h1{float:left}
+
+.sorter{font-size:11px; float:right; margin-top:19px; margin-right:-6px; margin-left:20px; position:relative;/* width:200px*/}
+.sorter ul.itemParam li.active a{text-decoration:underline; border:0}
+/*.sorter .itemParamTitle, .sorter ul li a{font-size:11px;}*/
+
+
+.catalogItems{padding:0 40px}
+.catalog .sliderCatalogItem{margin:25px 25px; float:left; width:160px; text-align:center}
+.catalog .sliderCatalogItem a.sliderCatalogItemImg{display:block; display:table-cell; vertical-align:bottom; position:relative; width:200px;/*width:100%;*/ height:166px; text-align:center}
+.sliderCatalogItemImg img{display:block; margin:auto}
+.catalog .itemName{display:block; padding:15px 0 0 0; color:#333; text-decoration:none}
+.catalog .itemName:hover{text-decoration:underline}
+.catalog .itemStars{padding:5px 0}
+
+.wishList{padding:0 10px}
+.wishList .itemDescr{font-size:11px; text-align:left; margin-top:30px; line-height:1.5em}
+.wishList .buttonConfirm{width:119px; height:21px; background:url(/img/tpl/button_confirm_small.png) no-repeat;}
+.wishList .buttonConfirm a{font-size:9px}
+.wishList .itemName{padding-top:10px}
+
+.wishList .sliderCatalogItem{width:200px; margin:25px 40px}
+.wishList .buttonConfirm{margin:30px auto 20px}
+.wishList .linkToCalend, .wishList .linkRemove{display:block; text-align:center; font-size:11px}
+.wishList .linkRemove{color:#666; margin-top:5px}
+
+.footLinks{/*text-align:right*/}
+.footLinks .backLink{margin-right:20px}
+.footLinks .pageLister{padding-top:0 !important} 
+
+/* /каталог товаров */
+
+.buttonConfirm{width:170px; height:30px; background:url(/img/tpl/button_confirm.png) no-repeat; margin:auto; text-align:center}
+.buttonConfirm a{color:#FFFFFF; font-size:13px; text-transform:uppercase; text-decoration:none; padding:6px; display:block}
+.buttonConfirm a:hover{text-decoration:underline}
+
+/* карточка товара */
+.itemCard{margin-bottom:40px}
+.itemCard h1{line-height:0.9em}
+.itemCard .itemImg{float:left; text-align:center; width:550px}
+.itemCard .itemInfo{float:left; width:600px;}
+.itemCard .itemInfo > div{padding-left:20px}
+.itemCard .itemRef{padding:15px 0 20px; border-bottom:1px solid #a4a4a4}
+.itemCard .itemRef .itemStars span, .itemRef .itemStars a{font-size:11px; color:#666; display:block; float:left; margin-right:14px}
+.starLine{}
+.itemCard .itemCode{color:#999; font-size:11px; padding:24px 0 20px 0}
+
+.itemCard .itemInner{padding:20px 0 0 0}
+.itemCard .itemInner ul{display:block; margin:10px 0 0 0; padding:0}
+.itemCard .itemInner ul li{display:block; position:relative; margin:0; padding:0; float:left; list-style:none; /*border:1px solid #fff; border-left:0*/}
+.itemCard .itemInner ul li a{border:1px solid #fff; display:block; /*border-left:1px solid*/}
+.itemCard .itemInner ul li a:hover{border:1px solid #906;}
+.itemCard .itemInner ul li a img{border:1px solid #fff}
+.itemCard .itemInner ul li a.active {border:1px solid #906 !important;} 
+.zoom{position:absolute; z-index:10; border:1px solid black; background:#fff; top:-230px; /*width:100px; height:50px;*/ padding:2px; display:block}
+.zoom span{display:block; padding:5px}
+
+.itemCard .itemDescr{padding:25px 0 20px; line-height:1.4em}
+.itemCard .itemPriceOld{/*font-size:14px;*/ color:#999; display:block; line-height: 0.4em;}
+.itemCard .itemPriceOld s{/*font-size:14px;*/ color:#999;}
+.itemCard .itemPrice{font-size:28px; color:#1c1c1c; float:left; margin-top:2px}
+.itemCard .itemPrice span{font-size:28px; color:#1c1c1c;}
+.itemCard .buttonConfirm{float:left; margin-left:60px; margin-right:60px; margin-top:5px}
+
+.itemParamTitle{display:block; float:left;}
+
+ul.itemParam{display:block; float:left; padding:0; margin:0; position:absolute; background:#fff; border:1px solid #fff; border-top:0}
+ul.itemParam li{list-style:none; display:none; padding:0 10px 3px; margin:0; white-space:nowrap}
+ul.itemParam li.active{display:block !important}
+ul.itemParam li a{color:#333; text-decoration:none}
+ul.itemParam li a:hover{text-decoration:underline}
+ul.itemParam li.active a:hover{text-decoration:none}
+
+ul.itemParamOpen{border: 1px solid #999999;/* border-left: 1px solid #999999;  border-right: 1px solid #999999;*/}
+ul.itemParamOpen li{display:block; }			
+ul.itemParamOpen li.active a{border-bottom:1px dashed #333}
+.top{z-index:100 !important}
+.itemParamHelp{font-size:11px; color:#999; padding:2px 0 0 13px}
+
+.itemCount{padding-bottom:20px}
+.itemCount a.itemCountLeft{padding:7px 6px 7px 15px}
+.itemCount a.itemCountRight{padding:7px 15px 7px 6px}
+
+img.arrowDown{display:block; float:left; cursor:pointer; padding:6px 7px}
+img.arrowDownHide{display:none;}
+
+.itemToFav, .itemToCalend{display:block; float:left; margin:10px 20px 0 0}
+.itemToCalend{color:#333; margin-right:0}
+.itemInfo .itemUserActivate{display:block; clear:both; padding-top:20px}
+
+.itemCardPage .content{padding-top:15px}
+.itemCardPage .linkWishList{color:#333 !important; text-decoration:none !important}
+.itemCardPage .linkWishList:hover{text-decoration:underline !important}
+.myOrder{margin-left:20px}
+/* /карточка товара */
+
+/* хроника */
+.chrono .nav{float:left}
+.chrono .pageLister a{color:#906; text-decoration:underline}
+.chrono .pageLister a:hover{text-decoration:none}
+.chrono .pageLister a.linkWishList{color:#000000; text-decoration:none}
+.chrono .pageLister a.linkWishList:hover{text-decoration:underline}
+.chrono h1{float:left}
+.chronoParam{float:right; margin-top:-5px}
+.chronoParamItem{float:left; margin-left:5px}
+.chronoParamItem select{display:block; margin-top:5px; width:110px}
+.chronoParamItem input{display:block; margin-top:3px}
+
+.chronoItem{padding:24px 0 16px 85px}
+.chronoItem img, .chronoItem div.noimg{float:left; display:block; width:135px; margin-right:35px}
+.chronoItemBody{float:left; width:800px; margin-top:-3px }
+.chronoItemBody p{clear:both; margin-bottom:20px}
+.chronoItemBody a{color:#333}
+.chronoItemDate{color:#906}
+.chronoItemHead h3{float:left; font-weight:normal; text-transform:uppercase; margin:0 0 0 5px}
+.chronoItemType{display:block; float:left;color:#999}
+
+.eventLister {/*float:right;*/ position:absolute; top:13px; right:25px; text-align:right; font-size:11px;/* margin-top:0*/}
+.eventLister p{margin:0 0 2px 0; font-size:11px;}
+.eventLister a{color:#333; font-size:11px; margin-left:15px}
+
+.eventText{margin:10px 75px}
+.eventHalf{float:left; /*width:45%; margin-right:5%*/}
+
+.ContentFlow h2{display:block; position:relative; left:25px; top:15px}
+/* /хроника */
+
+
+/* галерея */
+.galleryView{position:relative; margin-left:60px; margin-top:30px}
+.galleryVideo{float:left; margin-right:30px}
+.galleryViewDescr{float:left; width:360px;/* height:360px; position:relative;*/}
+.galleryViewDescr > div{position:absolute; bottom:23px; }
+.galleryViewDescr p{margin-top:20px}
+.galleryItemCategory{color:#999}
+.galleryItemDate{color:#906}
+
+.galleryPlay{background:#000; height:25px}
+.galleryPlay img{margin-left:25px; margin-top:5px; display:block; float:left}
+.galleryPlay a{color:#fff; text-decoration:none; display:block; float:left; margin:4px 0 0 7px}
+.galleryPlay a:hover{text-decoration:underline}
+/* /галерея */
+
+
+/* моя страница */
+.userInfo{border:1px solid #dbdbdb; border-radius:4px 4px 4px 4px; -webkit-border-radius:7px 7px 7px 7px; -moz-border-radius:7px 7px 7px 7px; -khtml-border-radius:7px 7px 7px 7px;  
+padding:15px 35px 15px 45px; margin-top:20px; position:relative}
+.userData h2{padding-bottom:20px}
+.userData{line-height:2em; float:left}
+.userData span{color:#ccc; font-size:11px}
+.userCard{float:right}
+.userCard img{margin-top:60px}
+
+.month table{width:200px}
+.month th, .month td{font-size:14px; text-transform:uppercase; color:#666; font-weight:normal; cursor:pointer}
+/*.month td:hover{text-decoration:underline}*/
+.month td.today{background:#906; color:#FFFFFF}
+.month td.today a{color:#FFFFFF}
+.sliderCalendarFooter{text-align:center; padding:20px 0}
+
+.noteNum, .noteItem{float:left; color:#FFFFFF}
+.noteItem{margin-left:10px; width:610px}
+.noteItem *{color:#FFFFFF}
+.noteItem div{margin-bottom:10px}
+.noteHead{font-family: "Times New Roman", Times, serif;   margin-left:10px;  font-size: 18px;	color:#fff;    font-style: italic;    font-weight: bold;}
+.noteHead a{display:block; float:right; font-family:tahoma; font-size:10px; font-style:normal}
+.noteText, .noteProd, .noteProd *{font-size:11px}
+.prodImg{text-align:center}
+#formNote .prod select{width:250px; height:200px; border:0}
+
+.resSuccess{text-align: center;padding: 20px;font-size: 16px;color: green;font-weight: bold;}
+.resFail{text-align: center;padding: 20px;font-size: 16px;color: red;font-weight: bold;}
+
+/* /моя страница */
+
+/* оформление заказа */
+.order form{padding:10px 0 0 0;}
+.orderParam{padding:33px 0 35px 0; }
+/*.orderParam div{float:left}*/
+.orderParam span{/*color:#999;*/ font-size:11px}
+.orderParam a{color:#333; font-size:11px}
+.orderP1{text-align:center; width:200px; float:left}
+.orderP2, .orderP3, .orderP4{width:250px; text-align:left;}
+.orderP3{width:290px}
+
+.orderP5, .orderP9{width:162px; text-align:right; }
+.orderP5 span, .orderP9 span{color:#1c1c1c; font-size:13px; margin-right:30px}
+.orderP2, .orderP3, .orderP4, .orderP5{padding-top:55px; float:left}
+.orderP2 a, .orderP3 a, .orderP4 a, .orderP5 a{color:#999;}
+.orderP2 .num, .orderP2 .num span{color:#999; font-size:13px}
+.orderP2 .num a{padding:7px 6px}
+.orderP3 a, .orderP4 a, .orderP2 .num{margin-top:14px; display:block}
+
+.orderDelivery{padding:0 0 35px 0;}
+.orderDeliveryImg{text-align:center; width:200px; float:left}
+.orderP6, .orderP7, .orderP8{float:left; width:250px; margin-top:15px}
+.orderP7{width:290px}
+.orderP6 select{width:150px; display:block; margin-top:5px}
+.orderP7 select{display:block; margin-top:5px}
+.orderP9{float:left; margin-top:35px}
+
+.orderP5{margin-top:16px}
+.orderP5 a{display:block; margin-right:30px; margin-top:30px}
+
+.orderTest{border-bottom:1px solid #a4a4a4;padding:0 0 20px 0;}
+
+.priceResult{text-align:right; padding:7px 0 0 0;}
+.priceResult span{margin-right:30px; font-size:18px; color:#1c1c1c}
+.priceResult span i{font-style:normal; font-size:18px; color:#1c1c1c}
+
+.orderForm{margin-top:20px;border-bottom:1px solid #a4a4a4;padding:0 0 27px 0; position:relative}
+.orderForm select{width:80px}
+.orderForm input, .orderForm textarea{width:250px; padding:0}
+.orderForm td.data{padding-left:5px}
+/*.orderForm input, .orderForm select{height:17px}*/
+.orderForm textarea{/*height:100%;*/ margin:14px 0 0 0;}
+.orderForm td{padding:4px 0}
+.orderP9 span i{font-style:normal}
+.orderP10{float:left;margin-left:62px; width:365px; margin-top:2px}
+.orderP10 input.orderCode{width:60px}
+.orderP10 input.orderPhone{width:180px; margin-left:6px; float:right}
+.orderP10 span{display:block;float:right}
+.orderP11{float:left;margin-left:23px; margin-top:9px; width:290px}
+.orderP12{float:left;/*margin-left:40px;*/ width:260px; margin-top:9px}
+.orderP12 input{margin-top:14px; width:auto; text-align:center}
+
+
+
+.priceResult2{position:absolute; right:30px; bottom:30px; text-align:right}
+.priceResult2 span.priceResult2Text{color:#906; display:block; margin-top:10px}
+.priceResult2 span span{font-size:18px; color:#906}
+.priceResult2 a.itemUserActivate{font-size:11px; color:#999}
+
+.orderPayVar{border-bottom:1px solid #a4a4a4; padding:30px 30px 24px 62px}
+.orderPayVarSelect{float:left; width:300px; /*margin-left:60px; padding-top:30px*/}
+.orderPayVarSelect div{margin-top:20px}
+.orderPayVarSelect input, .orderPayVarSelect span{display:block; float:left; margin-bottom:10px} 
+.orderPayVarSelect input{margin-left:0; margin-right:10px}
+
+.selectAddr{width:250px !important}
+
+
+.clientName{float:left; margin-top:108px; margin-left:20px; display:none}
+.clientName input{width:316px;}
+.orderPayVar p{float:right; /*margin-right:30px;*/ margin-top:43px}
+
+.orderConfirm{float:right; margin-top:22px; margin-right:30px; background: url("/img/tpl/button_confirm_big.png") no-repeat scroll 0 0 transparent;
+    height: 30px;    text-align: center;   width: 220px;}
+
+.msgError{color:#FF0000; font-style:italic}
+/* /оформление заказа */
+
+/* обратная связь */
+.feedbackCall{color:#906; padding:48px 0 122px 255px;border-bottom:1px solid #a4a4a4;}
+.feedbackCall span, .feedbackCall a{display:block; float:left; margin-top:17px; color:#906;}
+.feedbackCall span.title{width:130px; text-align:left}
+.feedbackCall span.phoneNumber{font-size:30px; margin-top:6px; color:#333; width:430px; text-align:left; /*margin-left:75px*/}
+.feedbackCall a{color:#333; font-size:13px; text-decoration:underline; /*margin-left:40px*/}
+.feedbackCall a:hover{text-decoration:none}
+
+.feedbackForm{padding:40px 0 30px 255px; border-bottom:1px solid #a4a4a4;}
+.feedbackForm span.title{color:#906; display:block; float:left; width:120px; margin-top:130px}
+.feedbackForm table{display:block; float:left; width:440px; /*margin-left:73px*/}
+.feedbackForm .feedbackConfirm{float:left; margin-top:125px; /*margin-left:30px*/}
+.feedbackForm table td span{display:block; float:right; margin:0; color:#333}
+.feedbackForm input, .feedbackForm textarea{width:250px}
+.feedbackForm select{width:254px}
+.feedbackForm input.phoneCode{width:60px;  display:block; float:left}
+.feedbackForm input.phoneNum{width:180px; margin-left:4px; display:block; float:right}
+.feedbackForm textarea{height:90px}
+/* /обратная связь */
+
+/* нижнее меню */
+.menuFoot{padding:40px 0 20px 5px}
+.menuFootS{padding-top:25px}
+.menuFoot ul{display:block; float:left; padding:0; margin:0; width:21%}
+.menuFoot ul.ulFootLast{width:15%}
+.menuFoot ul li{list-style:none; padding:0; margin:0}
+.menuFoot ul li a{color:#666; text-decoration:none; font-size:11px}
+.menuFoot ul li.first a{color:#906;}
+.menuFoot ul li a:hover{text-decoration:underline}
+
+/* /нижнее меню */
+
+/* подвал */
+.footer{padding:11px 24px 11px 30px;}
+
+.footer div.copyright{float:left; color:#666; font-size:10px; margin:3px 15px 0 0}
+.footer ul{display:block; float:left; margin:3px 0 0 0; padding:0}
+.footer ul li{display:block; float:left; list-style:none; margin:0 15px 0 0; padding:0;font-size:10px}
+.footer ul li a{color:#666; text-decoration:none; font-size:10px}
+.footer ul li a:hover{text-decoration:underline;}
+
+.buttonLike{float:right; /*height:20px !important;*/ overflow:hidden}
+/* /подвал */
+
+
